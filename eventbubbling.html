@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #grandparent {
+          padding: 50px;
+          width:400px;
+          border: 2px solid black;
+        }
+        #parent {
+          padding: 50px;
+          width:300px;
+          border: 2px solid black;
+        }
+        #child {
+          padding: 50px;
+          width:200px;
+          border: 2px solid black;
+        }
+        #gp {
+          padding: 50px;
+          width:400px;
+          border: 2px solid black;
+        }
+        #p {
+          padding: 50px;
+          width:300px;
+          border: 2px solid black;
+        }
+        #c {
+          padding: 50px;
+          width:200px;
+          border: 2px solid black;
+        }
+        #gdpt {
+          padding: 50px;
+          width:400px;
+          border: 2px solid black;
+        }
+        #pt {
+          padding: 50px;
+          width:300px;
+          border: 2px solid black;
+        }
+        #cd {
+          padding: 50px;
+          width:200px;
+          border: 2px solid black;
+        }
+
+
+
+
+
+      </style>
+      
+    
+</head>
+<body>
+    <div id="grandparent">
+        <div id="parent">
+            <div id="child"> event tricking</div>
+        </div>
+
+    </div>
+    <div id="gp">
+      <div id="p">
+          <div id="c"> event bubbling</div>
+      </div>
+  </div>
+</div>
+<div id="gdpt">
+  <div id="pt">
+      <div id="cd"> stop propagation</div>
+  </div>
+</div>
+
+
+    <script src="eventbubbling.js"></script>
+</body>
+</html> 
